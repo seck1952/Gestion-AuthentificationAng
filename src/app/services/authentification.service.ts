@@ -44,6 +44,9 @@ export class AuthentificationService {
    }
    return false;
   }
+  saveTask(task){
+    this.http.post(this.host+"/tasks",task,{headers:new HttpHeaders({'Authorization':this.jwtToken})})
+  }
 
 }
 

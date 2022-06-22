@@ -18,7 +18,7 @@ export class TaskComponent implements OnInit {
   Tasks(){
     this.auth.getTask().subscribe(data=>{
       this.tasks=data;
-      console.log(data);
+     // console.log(data);
 
     },error=>{
      this.router.navigateByUrl('/login');

@@ -1,6 +1,6 @@
 <div class="container">
     <p></p>
-    <button class="btn btn-danger" (click)="newTask()">NewTask</button>
+    <button class="btn btn-danger" (click)="newTask()" *ngIf="auth.isAadmin()">NewTask</button>
     <!--*ngIf="auth.isAadmin()"-->
     <p></p>
     <table class="table table-striped">
